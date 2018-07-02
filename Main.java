@@ -48,25 +48,43 @@ public class Main {
 
         int n = arr.length;
 
-        QuickSort ob = new QuickSort();
-        ob.sort(arr, 0, n-1);
 
-        System.out.println("sorted array \n");
-        ob.printArray(arr);
 
+        // Quick Sort and Print
+        QuickSort quickSobj = new QuickSort();
+//        quickSobj.sort(arr, 0, n-1);
+//        System.out.println("sorted array \n");
+//        quickSobj.printArray(arr);
+
+
+
+        // Bubble Sort and Print
 //        int[] arr2= {10, 7, 8, 9, 1, 5};
 //        BubbleSort bubOb = new BubbleSort();
 //        n = arr2.length;
 //
 //        bubOb.bubbleSort(arr2);
 //        System.out.println("sorted array \n");
-//        ob.printArray(arr2);
+//        quickSobj.printArray(arr2);
+//
 
 
-        int[] arr3= {10, 7, 8, 9, 1, 5};
-        SelectionSort selObj = new SelectionSort();
-        selObj.selectSort(arr3);
-        ob.printArray(arr3);
+
+//        // Selection Sort and Print
+//        int[] arr3= {10, 5, 9, 8, 1, 7};
+//        SelectionSort selObj = new SelectionSort();
+//        selObj.selectSort(arr3);
+//        quickSobj.printArray(arr3);
+//
+//
+
+        // Merge Sort and Print
+        int[] arr4= {10, 5, 9, 8, 1, 7};
+        MergeSort mergeObj = new MergeSort();
+        mergeObj.sort(arr4);
+        quickSobj.printArray(arr4);
+
+
 
 
     }
